@@ -2,21 +2,106 @@
 <html>
 	<head>
 		<meta charset="utf8" />
+		<link rel="stylesheet" href="reservia.css"/>
 		<title>Réservia</title>
+
 
 	</head>
 
 	<body>
 		<!--header -->
 		<header>
+			<img src="images/logo/reservia@3x.png" height=50>
+			<nav>
+				<ul>
+					<li>Hébergements</li>
+					<li>Activités</li>
+					<li>S'inscrire</li>
+				</ul>
+			</nav>
 		</header>
 
 		<!--bannière-->
 		<div id="bannière">
+			<h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+			<p>En plein centre ville ou en pleine nature</p>
+			<form method="post" action="traitement.php">
+				<p><input type="text" name="rechercher"></p>
+				<button>rechercher</button>
+			</form>
+			<span id="filtre">
+				<ul>
+					<li><a href="link">Economique</a></li>
+					<li><a href="link">Familial</a></li>
+					<li><a href="link">Romantique</a></li>
+					<li><a href="link">Animaux autorisés</a></li>
+				</ul>
+			</span>
 		</div>
 
 		<!--section 1 Hébergements-->
 		<section id=section01>
+			<div id=carte>
+				<a href="auberge-de-la-cannebière.html">
+					<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="226,8"height="113,4">
+					<p>Auberge la Cannebière</p>
+					<p>Nuit à partir de 25€</p>
+					<img src="images/icones/stars/stars1_04.gif" width="5%" >
+				</a>
+			</div>
+			
+			<div id=carte>
+				<a href="hotel-du-port.html">
+					<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="226,8"height="113,4">
+					<p>Hotel du port</p>
+					<p>Nuit à partir de 52€</p>
+					<img src="images/icones/stars/stars1_05.gif" width="5%" >
+				</a>
+
+			</div>
+
+			<div id=carte>
+				<a href="hotel-les-mouettes.html">
+					<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="226,8"height="113,4">
+					<p>Hotel les mouettes</p>
+					<p>Nuit à partir de 76€</p>
+					<img src="images/icones/stars/stars1_04.gif" width="5%" >
+				</a>
+			
+			</div>
+
+			<div id=carte>
+				<a href="hotel-de-la-mer.html">
+					<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="226,8"height="113,4">
+					<p>Hotel de la mer</p>
+					<p>Nuit à partir de 46€</p>
+					<img src="images/icones/stars/stars1_03.gif" width="5%" >
+				</a>
+			
+			</div>
+
+			<div id=carte>
+				<a href="auberge-le-panier.html">
+					<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="226,8"height="113,4">
+					<p>Auberge Le Panier</p>
+					<p>Nuit à partir de 23€</p>
+					<img src="images/icones/stars/stars1_04.gif" width="5%" >
+				</a>
+			
+			</div>
+
+			<div id=carte>
+				<a href="hotel-chez-amina.html">
+					<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="226,8"height="113,4">
+					<p>Hotel chez Amina</p>
+					<p>Nuit à partir de 96€</p>
+					<img src="images/icones/stars/stars1_05.gif" width="5%" >
+				</a>
+			
+			</div>
+
+
+
 		</section>
 
 		<!--section 2 Activités-->
