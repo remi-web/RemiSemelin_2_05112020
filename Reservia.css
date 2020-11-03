@@ -1,0 +1,215 @@
+@fonts-face
+{
+	font-family: 'raleway';
+	src: url('polices/Raleway-Italic-VariableFont_wght.ttf'),
+		: url('Raleway-VariableFont_wght.ttf');
+}
+
+
+#logo
+{
+	display: inline-block;
+	left: 100px;
+	padding-top:50px;
+	
+
+}
+header
+{
+	display: flex;
+	width: 1346px;
+	height: 113px;
+	border: dotted;
+	margin: auto;
+	padding: 10px;
+	
+}
+nav
+{
+	display: flex;	
+
+
+}
+li
+{
+	
+	list-style: none;
+	margin: auto;
+}
+#liensnav
+{
+	padding-top: 50px;
+	padding-left: 800px;
+}
+
+ul
+{
+	display: flex;
+
+	
+	
+}
+#bannièrre
+{
+	display: flex;
+	height: 262px;
+	width: 1346px;
+	border: dotted;
+}
+#recherche
+{
+	display: flex;
+}
+form
+{
+	display: flex;
+}
+input
+{
+	width: 131px;
+	height: 51px;
+	border: none;
+}
+button
+{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #0065FC;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	width: 131px;
+	height: 51px;
+}
+#filtre
+{
+	display: flex;
+	
+}
+#mot
+{
+	display: flex;
+	margin: 16px;
+}
+.icon-filter
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	background-color: #DEEBFF;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+	margin: auto;
+
+}
+.filter-select
+{
+	width: 194px;
+	height: 49px;
+	margin-right: 0px;
+	display: flex;
+	justify-content: center;
+	border: solid;
+	
+}
+
+#hebergements
+{
+	display: block;
+	height: 624px;
+	width: 892px;
+	background-color: #F2F2F2;
+	border: dotted;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	border: 3px;
+}
+#section11
+{
+	height: 624px;
+	width: 1346px;
+	display: flex;
+}
+#section01
+{
+	height: 468px;
+	width: 885px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+.carte
+{
+	
+	height: 194px;
+	width: 233px;
+	background: rgb(255,255,255);
+	border-radius: 10%;
+	box-shadow: 3px 1px 20px grey;
+	
+}
+.photos
+{
+	margin-top: 6px;
+	margin-left: 6px;
+	width: 95%;
+	height: 60%;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+
+}
+
+.name
+{
+	margin-left: 6px;
+}
+.description
+{
+	padding-left: 16px;
+}
+
+p
+{
+	margin:0px;
+
+}
+aside
+{
+	width: 425px;
+	height: 624px;
+	margin-right: 0px;
+	background-color: #F2F2F2;
+	padding: 10px;
+	border: 3px;
+	margin-top: 20px;
+}
+.carte-aside
+{
+	display: flex;
+	padding: 5px;
+	border: 5px;
+	margin: 27px;
+	background-color: rgba(255,255,255);
+	border-radius: 6%;
+	box-shadow: 3px 1px 20px grey;
+
+}
+.photos-aside
+{
+	border-left: 1px;
+	border-bottom-left-radius: 8%;
+	border-top-left-radius: 8%;
+	padding: 2px;
+}
+
+#populaires
+{
+	margin: 20px;
+	
+}
+
+
