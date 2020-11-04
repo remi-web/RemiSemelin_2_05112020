@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf8" />
 		<link rel="stylesheet" href="reservia.css"/>
-		<link rel="stylesheet" type="text/css" href="polices/raleway.ttf">
+		
 		<title>Réservia</title>
 
 
@@ -18,9 +18,15 @@
 				<nav>
 					<div id="liensnav">
 						<ul>
-							<li>Hébergements</li>
-							<li>Activités</li>
-							<li>S'inscrire</li>
+							<li class="nav">
+								<a class ="liseret" href="#hebergements">Hébergements</a>
+							</li>
+							<li class="nav">
+								<a class="liseret" href="#activités">Activités</a>
+							</li>
+							<li class="nav">
+								<a  class="liseret" href="#inscription">S'inscrire</a>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -29,36 +35,45 @@
 
 		<!--bannière-->
 		<div id="bannière">
-			<h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-			<p>En plein centre ville ou en pleine nature</p>
+			<h2>Trouvez votre hébergement pour des vacances de rêves</h2><br>
+			<p>En plein centre ville ou en pleine nature</p><br>
 			<!--section de recherche-->
 		</div>	
-		<div id ="recherche">	
+		<div id ="recherche">
+			<div id="icon-location">
+				<img src="images/icones/location/map-marker-alt-solid.svg" height="40%">
+			</div>	
 			<form method="post" action="traitement.php">
 				<div id="input">
-					<p><input type="text" name="rechercher"></p>
+					<p><input type="text" name="rechercher">Marseille,France</p>
 				</div>
-				<button>rechercher</button>
+				<button>Rechercher</button>
 			</form>
 		</div>
 		<div id="filtre">
-			<div id="mot"><p>Filtre</p></div>
+			<div id="mot"><p>Filtres</p></div>
 			<ul>
 				<div class="filter-select">
-					
-					<div class="icon-filter"><img src="images/icones/money-bill-wave-solid.svg "height="40%" ></div>
-
+					<div class="icon-filter"><img src="images/icones/filtres/money-bill-wave-solid.svg "height="40%" ></div>
 					<li><a href="link">Economique</a></li>
 				</div>
-					
-				<li><a href="link">Familial</a></li>
-				<li><a href="link">Romantique</a></li>
-				<li><a href="link">Animaux autorisés</a></li>
-
+				<div class="filter-select">
+					<div class="icon-filter"><img src="images/icones/filtres/child-solid.svg "height="40%" ></div>	
+					<li><a href="link">Familial</a></li>
+				</div>
+				<div class="filter-select">
+					<div class="icon-filter"><img src="images/icones/filtres/heart-regular.svg "height="40%" ></div>	
+					<li><a href="link">Romantique</a></li>
+				</div>
+					<div class="filter-select">
+					<div class="icon-filter"><img src="images/icones/filtres/dog-solid.svg"height="40%" ></div>	
+					<li><a href="link">Animaux autorisés</a></li>
+				</div>
 			</ul>
 		</div>
 		
 
+		
 		<div id="section11">
 			<div id="hebergements">
 				<h2>Hébergements à Marseilles</h2>
@@ -172,18 +187,45 @@
 					</div>
 			
 			</aside>
-	</div>
-
-
-
-
-
+		</div>
 
 
 
 		<!--section 2 activités-->
-		<section id=section02>
-			
+		<section id="section21">
+			<h2>Activités à Marseille</h2>
+			<div id="activites">
+				
+				<div class="bloc-activites1"><!--BLOC ACTIVITES PORTRAIT-->
+					<img class="photos-activites"src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><br>
+					<p class="nom-activite">Vieux Port</p>
+				</div>
+				
+				<div class="bloc-activites2"><!--BLOC ACTIVITES PAYSAGE-->
+					<div class="bloc-activites-paysage1">
+						<img class="photos-activites-paysage1" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+						<p class="nom-activite">Fort de Pomègues</p>
+					</div>
+					<div class="bloc-activites-paysage2">
+						<img class="photos-activites-paysage2"src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><br>
+						<p class="nom-activite">Iles de Frîoul</p>
+					</div>
+				</div>
+				<div class="bloc-activites1">
+					<img class="photos-activites"src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><br>
+					<p class="nom-activite">Parc national des Calanques</p>
+				</div>
+				<div class="bloc-activites2">
+					<div class="bloc-activites-paysage1">
+						<img class="photos-activites-paysage1"src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"><br>
+						<p class="nom-activite">Notre-Dame-de-la-Garde</p>
+					</div>
+					<div class="bloc-activites-paysage2">	
+						<img class="photos-activites-paysage2"src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><br>
+						<p class="nom-activite">Parc Longchamp</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!--footer-->
