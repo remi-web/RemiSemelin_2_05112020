@@ -77,12 +77,12 @@ li
 	display: flex;
 	justify-content: flex-end;
 }
-.header-li
+.header-li /*peut etre pas utile...*/
 {
 	display: flex;
 	justify-content: flex-end;
 }
-.header-a
+.header-a,#header-a-i
 {
 	height: 75px;
 	width: 160px;
@@ -97,11 +97,12 @@ li
 }
 .header-a:hover,focus
 {
-	
-	
 	border-top-color: rgb(000,000,255);
 }
-
+#header-a-i:hover
+{
+	border-top-color: rgb(000,000,255);
+}
 }
 #baner
 {
@@ -180,11 +181,12 @@ button
 	font-weight: bold;
 	color: rgb(255,255,255);
 	border-style: none;
-	
-	
 	width: 140px;
-	height: 49px;
-	
+	height: 49px;	
+}
+#loupe
+{
+	height: 0%;
 }
 
 
@@ -561,9 +563,333 @@ a
 }
 
 
+/*--------------------------------*RESPONSIVE*---------------------------------*/
+@media screen and (max-width:414px)
+{
+body
+{
+	width: 375px;
+	height: 5500px;
+	
+	
+			
+}
+
+#search,#filter,#section1,#section2
+{
+	
+}
+
+header
+{
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	
+}
+#logo
+{
+	
+	margin-top: 33px;
+	margin-left: 18px;
+}
+#header-nav
+{
+	padding: 0;
+	width: 100%;
+
+
+}
+nav
+{
+	width: auto;
+	
+}
+#header-ul /*déstructuration des liens*/
+{
+	width: 100%;
+	padding-left: 0px;
+	margin: 0px;
+	position: relative;
+	margin-top: 10px;
 
 
 
+}
+#header-li-i/*placement du lien s'inscrire*/
+{
+	position: absolute;
+	left: 65%;
+	top: -50px;
+
+}
+#header-li-h,#header-li-a /*placement des liens heb, et activités*/
+{
+	height: 58px;
+	width:100%;
+
+}
+.header-a
+{
+	height: 58px;
+	width: 100%;
+	border-bottom : solid;
+	border-bottom-color: #F2F2F2;
+	border-width: 2px;
+	padding-right: 0px;
+}
+.header-a:hover/*disparition du liseret top*/
+{
+	border-top-color: transparent;
+}
+#header-a-i:hover
+{
+	border-top-color: transparent;
+}
+.header-a:active /*apparition du liseret bottom*/
+{
+	border-bottom-color: #0065FC;
+}
+#baner
+{
+	width: 90%;
+	padding-left: 18px;
+}
+button
+{
+	height: 49px;
+	width: 49px;
+	font-size: 0px;
+}
+#loupe
+{
+	height: 40%;
+}
+#baner
+{
+	margin-top: 40px;
+
+}
+#search
+{
+	padding-left: 18px;
+	
+}
+#filter
+{
+	
+	flex-direction: column;
+	width: 100%;
+	height: 324px;
+	padding-left: 18px;
+
+}
+#filtre
+{
+	margin-bottom: 16px;
+}
+#filter-ul
+{
+	width: 100%;
+	flex-wrap: wrap;
+	position: relative;
+}
+.filter-select
+{
+	margin-left: 0px;
+	margin-bottom: 16px;
+	width: 175px;
+	
+
+}
+#filter-select-a /*Animaux*/
+{
+	position: absolute;
+	top: 140px;
+	left: -22px;
+	
+}
+#filter-select-f /*Familial*/
+{
+	width: 138px;
+	margin-left: 11px;
+	margin-right: 42px;
+	
+}
+#info
+{
+	width: 100%;
+	margin-top: 51px;
+
+}
+#info-text
+{
+	width: 80%;
+	flex-wrap: wrap;
+}
+#section1
+{
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	width: 100%;
+	height: 2100px;	
+	margin-top: 0px;
+	padding-left: 0px;
+}
+
+#hebergements
+{
+	width: 100%;
+	background-color: transparent;
+	height: 1500px;
+	padding-left: 0px;
+
+}
+h2
+{
+	margin-bottom: 0px;
+}
+#graph
+{
+	margin-left: 75px;
+}
+aside
+{
+	height: 600px;
+	width: 100%;
+	border-radius: 0;
+	
+
+}
+.carte-aside
+{
+	width: 87%;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.icones-aside
+{
+	margin-top:0px;
+}
+#section01
+{
+	align-items: flex-start;
+	justify-content: space-around;
+	padding-left: 0px;
+	height: 1500px;
+	width: 100%;
+	margin-top: 20px;
+	
+}
+.carte
+{
+	width: 87%;
+	margin-right: 0px;
+
+
+	
+}
+#section2
+{
+	flex-direction: column;
+	width: 100%;
+	height: 1453px;
+	padding-left: 0px;
+}
+
+#activites
+{
+	flex-direction: column;
+	width: 100%;
+	height: 1300px;
+	margin-top: 20px;
+	align-items: center;
+}
+.bloc-activites1,.bloc-activites-paysage1,.bloc-activites-paysage2
+{
+	width: 90%;
+	height: 194px;
+
+	
+}
+.bloc-activites2
+{
+	align-items: center;
+}
+.bloc-activites-paysage2
+{
+	margin-top:0px;
+	margin-left: 18px;	
+	
+}
+.bloc-activites-paysage1
+{
+	margin-bottom: 30px;
+	margin-left: 18px;	
+	
+}
+.photos-activites, .photos-activites-paysage1
+{
+	height: 70%;
+}
+
+.nom-activite
+{
+	margin-bottom: 0px;
+}
+footer
+{
+	flex-direction: column;
+	width: 100%;
+	height: 520px;
+}
+.foot
+{
+	margin-left: 18px;
+}
+}
+/*-----------------------Max width 414px------------------------------------*/
+@media screen  and (min-width: 380px) and (max-width: 414px)
+{
+body
+{
+	width: 414px;
+	height: 5500px;	
+}
+
+}
+
+/*----------------------Max width 355px (petit téléphone)--------------------------------------------*/
+@media screen  and (max-width: 320px)
+{
+body
+{
+	width: 320px;
+	height: 5500px;
+	margin: auto;
+	
+}
+input
+{
+	width: 70%;
+}
+#filter-select-a
+{
+	position: relative;
+	top: 0px;
+	left: -22px;
+}
+#filter-select-f
+{
+	margin-left: 0px;
+	margin-bottom: 12px;
+}
+#graph
+{
+	margin-left: 50px;
+}
+}
 
 
 
