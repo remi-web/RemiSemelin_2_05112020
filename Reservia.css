@@ -454,7 +454,7 @@ aside
 .icones-aside /*stars*/
 {
 	margin-top: 20px;
-	height:17px; width:78px
+	height:17px; width:100px
 }
 }
 #section2
@@ -587,7 +587,7 @@ a
 {
 body
 {
-	width: 375px;
+	width: 470px;
 	height: 5000px;
 	
 	
@@ -658,7 +658,7 @@ nav
 {
 	border-top-color: transparent;
 }
-.header-a:active /*apparition du liseret bottom*/
+.header-a:active,focus /*apparition du liseret bottom*/
 {
 	border-bottom-color: #0065FC;
 }
@@ -783,12 +783,14 @@ aside
 	height: 600px;
 	width: 100%;
 	border-radius: 0;
-		
-
+}
+#graph
+{
+	margin-bottom: 20px;
 }
 #bloc-carte-aside
 {
-	justify-content: center;
+	align-items: center;
 	width: 100%;
 }
 .carte-aside
@@ -815,10 +817,11 @@ aside
 .carte
 {
 	width: 85%;
-	margin-right: 0px;
-
-
-	
+	margin-right: 0px;	
+}
+.stars
+{
+	width: 25%;
 }
 #section2
 {
@@ -835,11 +838,13 @@ aside
 	height: 1300px;
 	margin-top: 20px;
 	align-items: center;
+	justify-content: space-around;
 }
 .bloc-activites1,.bloc-activites-paysage1,.bloc-activites-paysage2,.bloc-activites-paysage3
 {
 	width: 360px;
 	height: 194px;
+	margin-bottom: 30px;
 
 	
 }
