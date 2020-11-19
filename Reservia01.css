@@ -28,7 +28,7 @@ a
 }
 
 /*--------------------------------*MOBIL*---------------------------------*/
-@media screen and (max-device-width: 500px)
+@media screen and (max-device-width: 600px)
 {
 html
 {
@@ -42,8 +42,9 @@ body
 }	
 *
 {
-	
 	box-sizing: content-box;	
+	/*! margin-left: 20px; */
+	/*! margin-right: 20px; */
 }
 p
 {
@@ -65,7 +66,6 @@ li
 	height: 25%;
 	margin-left: 20px;
 }
-#header-nav
 
 #header-ul
 {
@@ -102,14 +102,12 @@ li
 	margin-left: 20px;
 	margin-right: 20px;
 }
-
-
-
 .header-a:active /* liseret bottom*/
 {
-	border-bottom-color: #0065FC;
+	border-bottom-color: #0065FC;	
 	color: #0065FC;
 }
+
 h1,h2
 {
 	font-size: 130%;
@@ -457,27 +455,43 @@ footer
 	margin-left: 20px;
 }
 /*---------------------DESKTOP--------------------*/
-@media screen and (min-device-width: 800px)  
+@media screen and (min-device-width: 600px)  
 {
 body
 {
-	
+	/*! width: 1440px; */
 	overflow-x: hidden;
+	margin: auto;
 }
 header,#baner,#filter,#section1,#section2,#search,.foot
 {
-	padding-left: 50px;
-}
-#logo
-{
-	width: 90px;
-	height: 33px;
-
+	padding-left: 15px;
+	padding-right: 15px;
 }
 header
 {
 	display: flex;
-	justify-content: space-between;
+	/*! justify-content: space-between; */
+}
+
+#logo
+{
+	width: 126px;
+	height: 38px;
+	/*! height: 33px; */
+
+}
+
+#header-nav
+{
+	/*! position: absolute; */
+	left: 900px;
+	margin-left: 0px;
+	width: 100%;
+    height: 61px;
+
+	justify-content: flex-end;
+	display: grid;
 }
 #logo1
 {
@@ -486,6 +500,7 @@ header
 ul
 {
 	display: flex;
+	/*! flex-wrap: wrap; */
 }
 li
 {
@@ -493,17 +508,12 @@ li
 	margin: auto;
 }
 
-#header-nav
-{
-	width: 425px;
-    height: 61px;
-    margin-right: 90px;
-}
 #header-ul
 {
     padding-left: 0;
     margin: 0;
 
+    width: 425px;
 }
 .header-li
 {
@@ -522,7 +532,7 @@ li
 
 
 }
-.header-a:hover,focus
+.header-a:hover
 {
 	border-top-color: rgb(000,000,255);
 }
@@ -530,9 +540,10 @@ li
 {
 	border-top-color: rgb(000,000,255);
 }
-.header-a,.header-a-i:visited
+
+#baner
 {
-	color: rgb(000,000,255);
+	margin-top: 70px;
 }
 h1
 {
@@ -597,12 +608,14 @@ button
 	display: flex;
 	font-weight: bold;
 	flex-wrap: wrap;
+	width: 90%;
 }
 #filter-text
 {
-	text-align: center;
+	margin-right: 23px;
 	margin-top: 30px;
 }
+
 
 #filter-ul
 {
@@ -625,33 +638,33 @@ button
 .filter-select
 {
 	width: 194px;
-	display: inherit;
+	display: flex;
 	border-color: #F2F2F2;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 25px;
-	margin-left: 23px;	
+	margin-right: 23px;	
 }
 
 #filter-select-f
 {
-	width: 150px;
+	width: 148px;
 	display: flex;
 	border-color: #F2F2F2;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 25px;
-	margin-left: 23px;
+	margin-right: 23px;
 }
 #filter-select-a
 {
-	width: 239px;
+	width: 235px;
 	display: flex;
 	border-color: #F2F2F2;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 25px;
-	margin-left: 23px;
+	margin-right: 23px;
 }
 .filter-select:hover
 {
@@ -698,29 +711,26 @@ button
 }
 #section1
 {
-	width: 1346px;
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 50px;
 }
 #hebergements
 {
 	
 	width: 879px;
-	height: 624px;
+	padding-bottom: 5%;
 	background-color: #F2F2F2;
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-top: 20px;
 	border: 3px;
 	border-radius: 10px;
-	margin-left: 0;
+	/*! margin-left: 0; */
 }
 
 #section01
 {
 	width: 100%;
-	height: 450px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;	
@@ -728,7 +738,7 @@ button
 
 h2
 {
-	margin-left: 25px;
+	margin-left: 23px;
 	margin-top: 45px;
 	width: 100%;
 	font-size: 21px;
@@ -738,7 +748,7 @@ h2
 .carte
 {
 	width: 242px;
-	height: 194px;
+	
 	padding-top: 4px;
 	padding-left: 4px;
 	padding-right: 4px;
@@ -773,9 +783,10 @@ h2
 }
 .stars
 {
-	margin-left: 10px;
-	height:17px; width:40%
+	
+	height:10%; width:40%;
 }
+
 p
 {
 	margin:0px;
@@ -787,11 +798,20 @@ p
 aside
 {
 	width: 420px;
-	align-items:  center;
 	background-color: #F2F2F2;
 	border: 3px;
 	margin-top: 20px;
 	border-radius: 10px;
+}
+#bloc-carte-aside
+{
+	/*! margin-left: auto; */
+	margin-top: 15px;
+
+	/*! padding-right: 50px; */
+	/*! margin-right: auto; */
+	justify-content: center;
+	display: grid;
 }
 #graph
 {
@@ -801,12 +821,7 @@ aside
 	margin-top: 28px;
 
 }
-#bloc-carte-aside
-{
-	height: 500px;
-	justify-content: space-around;
-	display: grid;
-}
+
 .carte-aside
 {
 	width: 342px;
@@ -816,7 +831,8 @@ aside
 	background-color: rgba(255,255,255);
 	border-radius: 15px;
 	box-shadow: 2px 2px 10px grey;
-	margin: auto;
+	
+	margin-bottom: 12px;
 }
 .photos-aside
 {
@@ -843,38 +859,46 @@ aside
 	align-items: center;
 	justify-content: space-between;	
 }
+.description
+{
+	position: relative;
+}
 .icones-aside /*stars*/
 {
-	margin-top: 50px;
-	height:17px; width:100px
+	position: absolute;
+	top: 50%;
+	height:10%; width:100px
 }
 #section2
 {
-	width: 1346px;
+	/*! width: 100%; */
 	margin-top: 58px;
-	margin-left: 0;
+	/*! margin-left: 0; */
 }
 #h2-a
 {
-	margin-left: 1px;
+	margin-left: 23px;
 }
 #activity
 {
-	width: 1346px;
-	height: 510px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 31.5px;
 
+	/*! width: 1346px; */
+	/*! margin: auto; */
+	flex-wrap: nowrap;
+	margin: auto;
 }
 .activity-1
 {
-	width: 301px;
+	width: 304px;
 	height: 441px;
 	
 	border-radius: 10px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 10px grey;
+	margin-left: 2%;
 }
 .photo-activity-1
 {
@@ -887,7 +911,8 @@ aside
 {
 	
 	border-radius: 10px;
-	
+	margin-left:2%;
+	/*! margin-right: 2%; */
 }
 .bloc-activity-2
 {
@@ -950,22 +975,231 @@ aside
 
 footer
 {
-	width: 100%;
+	
 	background-color: #F2F2F2;
 	display: flex;
-	justify-content: space-around;
 
 }
 .foot
 {
-	width: 311px;
+	
 	margin-right: 218px;
-	margin-left: 0;
+	
+	padding-left: 5%;
 }
 }
 
+@media screen and (min-device-width: 1224px) and (max-device-width:1400px)
+{
+#section2
+{
+	width: 95%;
+	
+}
+}
+/*-----------------------TABLET--------------------------*/
+@media screen and (min-device-width: 600px) and (max-device-width:1224px)
+{
+html
+{
+	overflow-x: hidden;
+}
+header
+{
+	width: auto;
+
+}
+#header-nav
+{
+	margin-top: 50px;
+
+
+}
+#header-ul
+{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+}
+#header-li-h,#header-li-a,#header-li-i
+{
+	
+	width: 100%;
+}
+
+.header-a,#header-a-i
+{
+	width: 100%;
+	border-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #F2F2F2;
+	margin-right: 0px;
+	margin-left:0px;
+}
+.header-a:active  
+{
+	border-bottom-color: #0065FC;	
+	color: #0065FC;
+	border-top-color: transparent;
+}
+#header-a-i:active 
+{
+	border-bottom-color: #0065FC;	
+	color: #0065FC;
+	border-top-color: transparent;
+}
+.header-a:hover 
+{
+	border-top-color: transparent;
+}
+#header-a-i:hover 
+{
+	border-top-color: transparent;
+}
+
+#header-nav
+{
+	width: 100%;
+	left: 0px;
+}
+#baner
+{
+	margin-bottom: 5%;
+}
+
+#filter
+{
+	width: auto;
+}
+#filter-ul
+{
+	flex-wrap: wrap;
+}
+#section1,#section2
+{
+	padding-left: 15px;
+}
+
+
+
+.filter-select,#filter-select-f 
+{
+	margin-bottom: 12px;
+}
+
+#section1
+{
+	flex-direction: column;
+}
+.carte
+{
+	width: 45%;
+}
+#hebergements
+{
+	width: auto;
+}
+
+aside
+{
+	width:100%;
+	padding-bottom: 5%;
+	/*! padding-left: 30px; */
+	margin-right: 30px;
+}
+#bloc-carte-aside,#popular
+{
+	padding-left: 20px;
+	display: flex;
+	justify-content: space-around;
+	/*! margin-left: 0; */
+	padding-left: 0;
+}
+.carte-aside
+{
+	width: 25%;
+}
+#popular
+{
+	width: 40%;
+}
+.activity-1,.activity-2
+{
+	 width: 40%;
+	
+}
+#activity
+{
+	/*! width: 100%; */
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-content: space-around;
+	/*! flex-direction: row; */
+	/*! justify-content: center; */
+	/*! margin: auto; */
+}
+#activity :nth-child(1)
+{
+	order: 2;
+}
+#activity :nth-child(2)
+{
+	order: 1;
+}
+.bloc-activity-3
+{
+	width: 100%;
+}
+
+.bloc-activity-2_1,.bloc-activity-2
+{
+	width: 100%;
+}
+footer
+{
+	
+}
+.foot
+{
+	margin-right: 0px;
+	width: auto;
+	
+}
+}
+
+@media screen and (min-device-width: 600px ) and ( max-device-width: 780px )
+{
+
+.carte-aside
+{
+	flex-direction: column;
+	height: 200px;
+}
+.photos-aside,#photos-aside-3
+{
+	width: 100%;
+	height: 50%;
+	border-top-right-radius: 13px;
+	border-bottom-left-radius:0px;
+}
+.icones-aside
+{
+	height: 30%;
+}
 
 
 
 
 
+}
+/*-----------------MOBIL----------------*/
+@media screen and (min-device-width: 400px ) and ( max-device-width: 600px )
+{
+.carte,.carte-aside,.activity-1,.activity-2
+{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+}
+*/
