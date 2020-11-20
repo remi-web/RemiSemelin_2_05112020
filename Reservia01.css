@@ -458,15 +458,20 @@ body
 	overflow-x: hidden;
 	
 }
+#bloc-header
+{
+	width: 60%;
+}
 
 header
 {
 	display: flex;
 	/*! justify-content: space-between; */
+	justify-content: center;
 }
 header,#baner,#filter,#search
 {
-	margin-left: 20px;
+	/*! margin-left: 20px; */
 }
 header,#baner,#filter,#search,#section1,#section2
 {
@@ -485,7 +490,7 @@ header,#baner,#filter,#search,#section1,#section2
 	/*! position: absolute; */
 	
 	margin-left: 0px;
-	width: 1200px;
+	width: 1225px;
     height: 61px;
     position: relative;
 	justify-content: flex-end;
@@ -544,9 +549,16 @@ li
 	border-top-color: rgb(000,000,255);
 }
 
+
+#baner0
+{
+	justify-content: center;
+	display: flex;
+}
+
 #baner
 {
-	margin-top: 70px;
+	width: 1346px;
 }
 h1
 {
@@ -722,6 +734,7 @@ button
 {
 	display: flex;
 	margin-bottom: 50px;
+	justify-content: center;
 }
 #hebergements
 {
@@ -756,7 +769,7 @@ h2
 
 .carte
 {
-	width: 242px;
+	width: 28%;
 	
 	padding-top: 4px;
 	padding-left: 4px;
@@ -885,6 +898,8 @@ aside
 	margin-top: 58px;
 	/*! margin-left: 0; */
 	/*! background-color: #F2F2F2; */
+	display: grid;
+	justify-content: center;
 }
 #h2-a
 {
@@ -1018,6 +1033,7 @@ body
 {
 	margin-left: 0;
 }
+
 header
 {
 	width: auto;
