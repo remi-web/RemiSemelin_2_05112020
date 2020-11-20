@@ -415,12 +415,7 @@ aside
 	margin-left: 20px;
 	margin-right: 20px;
 }
-#activity
-{
-	
 
-
-}
 .activity-1,.bloc-activity-2,.bloc-activity-2_1,.bloc-activity-3
 {	
 	height: 190px;
@@ -454,7 +449,7 @@ footer
 {
 	margin-left: 20px;
 }
-/*---------------------DESKTOP--------------------*/
+/*---------------------DESKTOP--------------------------------*/
 @media screen and (min-device-width: 600px)  
 {
 body
@@ -488,13 +483,18 @@ header,#baner,#filter,#search,#section1,#section2
 #header-nav
 {
 	/*! position: absolute; */
-	left: 900px;
+	
 	margin-left: 0px;
 	width: 1200px;
     height: 61px;
-
+    position: relative;
 	justify-content: flex-end;
 	display: grid;
+}
+#header-ul
+{
+	left: 800PX;
+	/*! position: absolute; */
 }
 #logo1
 {
@@ -647,6 +647,7 @@ button
 	border-width: 2px;
 	border-radius: 25px;
 	margin-right: 23px;	
+	border-left-width: 0px;
 }
 
 #filter-select-f
@@ -658,16 +659,21 @@ button
 	border-width: 2px;
 	border-radius: 25px;
 	margin-right: 23px;
+	border-left-width: 0px;
+
 }
 #filter-select-a
 {
 	width: 235px;
+	max-height: 49px;
 	display: flex;
 	border-color: #F2F2F2;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 25px;
 	margin-right: 23px;
+	border-left-width: 0px;
+
 }
 .filter-select:hover
 {
@@ -787,7 +793,7 @@ h2
 .stars
 {
 	
-	height:8%; width:25%;
+	/*! height:8%; */ width:100px;
 }
 
 p
@@ -1001,19 +1007,16 @@ footer
 }
 }
 
-@media screen and (min-device-width: 1224px) and (max-device-width:1400px)
-{
-.activity-1,.activity-2
-{
-	width: 90%;
-}
-}
-/*-----------------------TABLET--------------------------*/
+/*-----------------------TABLET-----------------------------------------*/
 @media screen and (min-device-width: 600px) and (max-device-width:1224px)
 {
 html
 {
 	overflow-x: hidden;
+}
+body
+{
+	margin-left: 0;
 }
 header
 {
@@ -1028,7 +1031,7 @@ header
 }
 #header-ul
 {
-	position: absolute;
+ 	position: absolute;
 	left: 0px;
 	width: 100%;
 }
@@ -1072,10 +1075,12 @@ header
 {
 	width: 100%;
 	left: 0px;
+	position: absolute;
 }
 #baner
 {
 	margin-bottom: 5%;
+	margin-top: 20%;
 }
 
 #filter
@@ -1086,11 +1091,12 @@ header
 {
 	flex-wrap: wrap;
 }
-#section1,#section2
-{
-	padding-left: 15px;
-}
 
+
+header,#baner,#filter,#search,#section1,#section2
+{
+	margin-left: 6px;
+}
 
 
 .filter-select,#filter-select-f 
@@ -1116,7 +1122,9 @@ header
 }
 #hebergements
 {
-	width: auto;
+	width: 100%;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 aside
@@ -1146,11 +1154,13 @@ aside
 }
 #section2
 {
-	background-color: #F2F2F2;
+	
 	padding-top: 10px;
 	margin-bottom: 20px;
 	border-radius: 13px;
 	margin-top: 0px;
+	width: 100%;
+
 }
 .activity-1,.activity-2
 {
@@ -1179,9 +1189,11 @@ aside
 	justify-content: space-around;
 }
 #activity-A,#activity-B
-	{
-		margin-left: 0px
-	}
+{
+	margin-left: 0;
+	width: 90%;
+}
+
 .bloc-activity-3
 {
 	width: 100%;
@@ -1191,6 +1203,7 @@ aside
 {
 	width: 100%;
 }
+
 footer
 {
 	
@@ -1202,9 +1215,20 @@ footer
 	
 }
 }
-@media screen and (min-device-width: 845px ) and ( max-device-width: 1224px )
+@media screen and (min-device-width: 1224px) and (max-device-width: 1262px)
 {
+.nom-activite
+{
+	margin-top: 0px;
+}
 
+}
+@media screen and (max-device-width: 900px)
+{
+#filter-ul
+{
+	flex-wrap: wrap;
+}
 }
 @media screen and (min-device-width: 600px ) and ( max-device-width: 780px )
 {
@@ -1241,4 +1265,4 @@ footer
 	margin-right: 15%;
 }
 }
-*/
+
