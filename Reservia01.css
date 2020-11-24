@@ -962,7 +962,7 @@ aside
 #h2-a
 {
 
-	margin-left: 0;
+	/*! margin-left: 0; */
 }
 #activity
 {
@@ -1218,11 +1218,12 @@ header,#baner,#filter,#search,#section1,#section2
 #section1
 {
 	/*! width: 760px; */
+	padding-left: inherit;
 }
 #hebergements
 {
 	width: 100%;
-	margin-left: 0;
+	/*! margin-left: 0; */
 	padding-left: 0;
 	border-radius: unset;
 }
@@ -1235,6 +1236,9 @@ aside
 	margin-right: 30px;
 	background-color: #F2F2F2;
 	border-radius: unset;
+	padding-left: 0;
+	padding-right: inherit;
+	/*! padding-left: 10px; */
 }
 #bloc-carte-aside,#popular
 {
