@@ -120,11 +120,15 @@ li
 	border-bottom-color: #0065FC;	
 	color: #0065FC;
 }
+.header-a:focus {
+	border-bottom-color: #0065FC;	
+	color: #0065FC;
+}
 
 h1,h2
 {
 	font-size: 130%;
-	padding-right: 20px;
+	
 }
 h1
 {
@@ -222,12 +226,12 @@ input
 	align-items: center;
 	margin-bottom: 12px;
 	border-left-width: 0px;
-	margin-left: 12px;
+	margin-left: 10px;
 	
 }	
 #filter-select-a
 {
-	width: 60%;
+	width: 75%;
 	
 	display: flex;
 	border-color: #F2F2F2;
@@ -238,6 +242,7 @@ input
 	margin-bottom: 12px;
 	border-left-width: 0px;
 	
+	/*! padding-right: 4px; */
 }
 
 .icon-filter
@@ -268,6 +273,8 @@ input
 {
 	font-weight: bold;
 	text-align: center;
+	/*! margin-right: 4px; */
+	font-size: smaller;
 }
 #filter-text
 {
