@@ -1,14 +1,14 @@
 @font-face
 {
     font-family: 'ralewaythin';
-    src: url('polices/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    src: url('Polices/Raleway/static/Raleway-Regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face
 {
 	font-family: 'ralewaythin';
-    src: url('polices/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    src: url('Polices/Raleway/static/Raleway-Bold.ttf') format('truetype');
 	font-style: normal;
 	font-weight: bold;
 }
@@ -818,7 +818,7 @@ h2
 .stars
 {
 	
-	 width:100px;
+	 /*! width:100px; */
 }
 
 p
